@@ -192,14 +192,28 @@ img {
   color: var(--accent-color);
 }
 
-.subtitle-dark {
+.subtitle {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.subtitle-dark {
   color: var(--text-dark-theme-color);
+}
+
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--text-dark-theme-color);
 }
 
 .hero-title {
@@ -237,11 +251,6 @@ img {
 }
 
 .subtitle-light {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-  text-transform: uppercase;
-  margin-bottom: 20px;
   color: var(--title-light-theme-color);
 }
 
