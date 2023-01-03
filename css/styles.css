@@ -106,10 +106,8 @@ img {
 }
 
 .navigation-list-link,
-.header-tel,
-.modal-btn {
+.header-tel {
   display: block;
-
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -118,13 +116,18 @@ img {
 }
 
 .modal-btn {
+  display: block;
+  font-family: inherit;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid #ff6c00;
-  padding: 12px 20px;
   border-radius: 25px;
   cursor: pointer;
   background-color: transparent;
+  max-width: 250px;
+  min-width: 160px;
+  min-height: 40px;
+  padding: 11px 19px;
 }
 
 .navigation-list-link:focus,
@@ -143,15 +146,14 @@ img {
   text-transform: uppercase;
 }
 
-.modal-btn {
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+
+.modal-btn-theme-dark {
+  color: var(--modal-btn-dark-theme-color);
 }
 
 /* HERO SECTION */
@@ -272,10 +274,6 @@ img {
   color: var(--text-light-theme-color);
 }
 
-.about-us .modal-btn {
-  color: var(--modal-btn-light-theme-color);
-}
-
 /* Services and prices */
 
 .title-dark {
@@ -318,10 +316,9 @@ img {
   color: var(--text-dark-theme-color);
 }
 
-.services-modal-btn {
+.services .modal-btn {
   display: block;
   margin: 0 auto;
-  /* color: var(--modal-btn-dark-theme-color); */
 }
 
 /* Why are we */
