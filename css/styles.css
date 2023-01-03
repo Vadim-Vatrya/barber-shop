@@ -116,6 +116,7 @@ img {
   letter-spacing: 0.1em;
   /* color: var(--title-dark-theme-color); */
 }
+
 .modal-btn {
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -175,6 +176,7 @@ img {
   letter-spacing: 0.2em;
   color: var(--text-light-theme-color);
 }
+
 .social-links {
   display: flex;
 }
@@ -188,12 +190,13 @@ img {
   color: var(--accent-color);
 }
 
-.subtitle {
+.subtitle-dark {
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-bottom: 20px;
   color: var(--text-dark-theme-color);
 }
 
@@ -204,7 +207,7 @@ img {
   font-size: 72px;
   line-height: 85px;
   letter-spacing: 0.05em;
-  /* color: var(--title-dark-theme-color); */
+  color: var(--title-dark-theme-color);
 }
 
 .description {
@@ -231,25 +234,29 @@ img {
   max-width: 474px;
 }
 
-.about-us .subtitle {
+.subtitle-light {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--title-light-theme-color);
 }
 
-.title {
+.title-light {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-}
-
-.about-us .title {
   margin-bottom: 20px;
   color: var(--title-light-theme-color);
 }
 
-.about-us .description {
+.description-light {
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
   color: var(--text-light-theme-color);
   margin-bottom: 20px;
 }
@@ -271,13 +278,14 @@ img {
 
 /* Services and prices */
 
-.services .title {
+.title-dark {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
   /* color: var(--title-dark-theme-color); */
   margin-bottom: 44px;
-}
-
-.services .subtitle {
-  margin-bottom: 20px;
 }
 
 .price-block {
@@ -365,20 +373,14 @@ img {
   color: var(--title-light-theme-color);
 }
 
-.why-are-we .subtitle {
-  margin-bottom: 20px;
-  color: var(--title-light-theme-color);
-}
-
 .why-are-we .title {
   max-width: 430px;
   margin-bottom: 20px;
   color: var(--title-light-theme-color);
 }
 
-.why-are-we .description {
+.why-are-we .description-light {
   max-width: 500px;
-  color: var(--text-light-theme-color);
 }
 
 .symbol-plus {
@@ -391,12 +393,7 @@ img {
 
 /* Our masters */
 
-.masters .subtitle {
-  margin-bottom: 20px;
-  color: var(--title-light-theme-color);
-}
-
-.masters .title {
+.masters .title-light {
   margin-bottom: 44px;
 }
 
@@ -435,7 +432,7 @@ img {
 
 /* GALLERY */
 
-.gallery .subtitle {
+.gallery .subtitle-light {
   margin-bottom: 44px;
   color: var(--title-light-theme-color);
 }
@@ -482,21 +479,12 @@ img {
   background-color: transparent;
 }
 
-.contact .title {
-  /* color: var(--title-dark-theme-color); */
-}
-
 .contact-list-item-link {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.36;
   letter-spacing: 0.02em;
   color: var(--text-dark-theme-color);
-}
-
-.contact .subtitle {
-  /* color: var(--title-dark-theme-color); */
-  margin-bottom: 20px;
 }
 
 .contact-time {
