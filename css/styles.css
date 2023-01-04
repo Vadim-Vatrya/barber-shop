@@ -1,6 +1,6 @@
 :root {
-  --main-font: "Open Sans", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --title-dark-theme-color: #ffffff;
   --title-light-theme-color: #303030;
   --modal-btn-dark-theme-color: #ffffff;
@@ -162,10 +162,7 @@ img {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url(../image/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: right;
@@ -222,7 +219,7 @@ img {
 }
 
 .subtitle::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -231,7 +228,7 @@ img {
 }
 
 .hero-title {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
@@ -331,19 +328,11 @@ img {
 }
 
 .services-list:first-child {
-  background-image: linear-gradient(
-    180deg,
-    rgb(23, 26, 36) 0%,
-    rgba(23, 26, 36, 0.2) 100%
-  );
+  background-image: linear-gradient(180deg, rgb(23, 26, 36) 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .services-list:last-child {
-  background-image: linear-gradient(
-    180deg,
-    #090b13 0%,
-    rgba(9, 11, 19, 0.2) 100%
-  );
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .services-list-item {
@@ -448,6 +437,10 @@ img {
 
 /* Our masters */
 
+.masters {
+  background-color: #f7f7f7;
+}
+
 .masters .title-light {
   margin-bottom: 44px;
 }
@@ -483,6 +476,32 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--title-light-theme-color);
+  background-color: var(--title-dark-theme-color);
+  border-radius: 50%;
+}
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  color: #ff6c00;
+}
+
+.social-list-item-link-svg {
+  fill: currentColor;
 }
 
 /* GALLERY */
