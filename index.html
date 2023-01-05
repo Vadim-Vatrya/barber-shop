@@ -397,50 +397,66 @@
       </section>
 
       <!-- Online-Booking -->
-
-      <section></section>
-
       <!-- Contacts -->
 
-      <section class="contact section">
-        <div class="container">
-          <div class="contact-form">
-            <h2 class="title-light contact-title">Online-booking</h2>
-            <button type="submit" class="modal-btn contact-modal-btn">send</button>
-          </div>
-          <div class="contact-data">
-            <h2 class="title-light">Contacts</h2>
-            <ul class="contacts-list list">
-              <li class="contact-list-item">
-                <adress class="adress">
+      <div class="contatcs-group">
+        <div class="contatcs-group-container container">
+          <section class="booking section">
+            <h2 class="title-dark contact-title">Online-booking</h2>
+            <form class="booking-form">
+              
+              <!-- <button type="submit" class="modal-btn contact-modal-btn">send</button> -->
+            </form>
+          </section>
+
+          <section class="contacts section" id="contacts">
+            <h2 class="title-dark">Contacts</h2>
+            <adress class="contacts-address">
+              <ul class="contacts-list list">
+                <li class="contacts-item">
                   <a
-                    class="contact-list-item-link link"
-                    href="https://goo.gl/maps/Aek9VfqJxaWBVfHE9"
+                    class="contacts-link link"
+                    href="https://goo.gl/maps/UgYU75aT7GZat5ea9"
                     target="_blank"
-                    >ул. Васильковая, 7А Киев, 08132
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="contacts-icon contacts-icon-top" width="24" height="24">
+                      <use href="./image/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <span class="contacts-text">
+                      st. Vasilkovaya, 7A <br />
+                      Kiev, 08132s
+                    </span>
                   </a>
-                </adress>
-              </li>
-              <li class="contact-list-item">
-                <adress class="adress">
-                  <a class="contact-list-item-link link" href="tel:+380441111111">
-                    +38 044 111 11 11
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="tel:+380441111111">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./image/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <span class="contacts-text"> +38 044 111 11 11 </span>
                   </a>
-                </adress>
-              </li>
-              <li class="contact-list-item">
-                <adress class="adress">
-                  <a class="contact-list-item-link link" href="mailto:barbershop@email.com">
-                    barbershop@email.com
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="mailto:barbershop@email.com">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./image/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <span class="contacts-text"> barbershop@email.com </span>
                   </a>
-                </adress>
-              </li>
-            </ul>
-            <p class="subtitle-dark">Working hours</p>
-            <p class="contact-time">Every day from 9:00 to 22:00</p>
-          </div>
+                </li>
+              </ul>
+            </adress>
+            <div>
+              <p class="contacts-uppertitle">working hours</p>
+              <p class="contacts-schedule">
+                Every day from <time datetime="09:00">9:00</time> to
+                <time datetime="22:00">22:00</time>
+              </p>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->
