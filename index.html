@@ -25,7 +25,7 @@
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
-              <a class="navigation-list-link link" href=""> About </a>
+              <a class="navigation-list-link current link" href=""> About </a>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-link link" link href=""> Services and prices </a>
@@ -52,7 +52,7 @@
 
       <section class="hero">
         <div class="hero-container container">
-          <div>
+          <div class="hero-left-side">
             <ul class="social-links list">
               <li class="class" ="social-links-item">
                 <a class="social-links-item-link link" href="" lang="en"> Instagram </a>
@@ -62,13 +62,26 @@
               </li>
             </ul>
           </div>
-          <div class="hero-slider">
+          <div class="hero-right-side">
             <p class="subtitle subtitle-dark">A hair salon for men in Kyiv</p>
             <h1 class="hero-title" lang="en">BarberShop</h1>
             <p class="description">
               We are experts in trendy men’s haircuts. <br />
               We work quickly, carefully and with style.
             </p>
+            <ul class="slider-pagination list">
+              <li class="slider-pagination-item active"></li>
+              <li class="slider-pagination-item"></li>
+              <li class="slider-pagination-item"></li>
+            </ul>
+            <ul class="slider-controls list">
+              <li class="slider-item">
+                <button class="slider-btn disable" type="button">Back</button>
+              </li>
+              <li class="slider-item">
+                <button class="slider-btn" type="button">Forward</button>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -404,7 +417,6 @@
           <section class="booking section">
             <h2 class="title-dark contact-title">Online-booking</h2>
             <form class="booking-form">
-              
               <!-- <button type="submit" class="modal-btn contact-modal-btn">send</button> -->
             </form>
           </section>
