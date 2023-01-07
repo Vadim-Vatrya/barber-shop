@@ -42,7 +42,9 @@
           <address class="header-adress">
             <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
           </address>
-          <button class="modal-btn modal-btn-theme-dark" type="button">online-booking</button>
+          <button class="modal-btn modal-btn-theme-dark" type="button" data-modal-open>
+            online-booking
+          </button>
         </div>
       </div>
     </header>
@@ -127,7 +129,7 @@
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="modal-btn" type="button">online-booking</button>
+            <button class="modal-btn" type="button" data-modal-open>online-booking</button>
           </div>
         </div>
       </section>
@@ -184,7 +186,9 @@
               </li>
             </ul>
           </div>
-          <button class="modal-btn modal-btn-theme-dark" type="button">online-booking</button>
+          <button class="modal-btn modal-btn-theme-dark" type="button" data-modal-open>
+            online-booking
+          </button>
         </div>
       </section>
 
@@ -488,6 +492,17 @@
       </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="20" height="20">
+            <use href="./image/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
