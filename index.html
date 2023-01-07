@@ -422,8 +422,45 @@
         <div class="contatcs-group-container container">
           <section class="booking section">
             <h2 class="title-dark contact-title">Online-booking</h2>
-            <form class="booking-form">
-              <!-- <button type="submit" class="modal-btn contact-modal-btn">send</button> -->
+            <form class="booking-form" name="booking_form">
+              <div class="booking-form-group">
+                <label class="booking-form-field">
+                  <input
+                    class="booking-form-input"
+                    type="text"
+                    name="user_name"
+                    placeholder="Alan Alan"
+                    required
+                    minlength="2"
+                  />
+                  <span class="booking-form-label">name*</span>
+                </label>
+                <label class="booking-form-field">
+                  <input
+                    class="booking-form-input"
+                    type="text"
+                    name="user_phone"
+                    placeholder="+38 (099) 123 45 67"
+                    required
+                    minlength="6"
+                    maxlength=""
+                  />
+                  <span class="booking-form-label">phone*</span>
+                </label>
+              </div>
+              <div>
+                <label class="booking-form-message">
+                  <textarea
+                    class="booking-form-textarea"
+                    name="user_message"
+                    rows="5"
+                    placeholder="Type your message..."
+                  ></textarea>
+                  <span>message</span>
+                </label>
+
+                <button class="contatcs-btn btn btn-theme-dark" type="submit" disabled>send</button>
+              </div>
             </form>
           </section>
 
