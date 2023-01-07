@@ -400,6 +400,27 @@ img {
   color: var(--text-dark-theme-color);
 }
 
+.slider-pagination {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+}
+.slider-pagination-item {
+  margin-left: auto;
+  width: 8px;
+  height: 2px;
+
+  background-color: var(--text-dark-theme-color);
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.slider-pagination-item.active {
+  width: 18px;
+  background-color: var(--modal-btn-dark-theme-color);
+}
+
 .slider-controls {
   position: absolute;
   bottom: 40px;
