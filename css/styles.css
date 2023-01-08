@@ -330,14 +330,17 @@ img {
   transition: color var(--trns-fast);
 }
 
-.social-links {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.hero-social-links {
   margin-bottom: 40px;
 
   transform: rotate(-90deg) translateY(26px);
   transform-origin: top left;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .social-links::before {
@@ -1059,4 +1062,9 @@ img {
   justify-content: center;
   gap: 10px;
   margin-bottom: 15px;
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
 }
