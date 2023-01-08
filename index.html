@@ -456,10 +456,12 @@
                     rows="5"
                     placeholder="Type your message..."
                   ></textarea>
-                  <span>message</span>
+                  <span class="booking-form-label">message</span>
                 </label>
 
-                <button class="contatcs-btn btn btn-theme-dark" type="submit" disabled>send</button>
+                <button class="contatcs-btn modal-btn modal-btn-theme-dark" type="submit" disabled>
+                  send
+                </button>
               </div>
             </form>
           </section>
@@ -582,11 +584,19 @@
             </label>
           </div>
 
-          <label>
-            <input type="checkbox" name="" />
-            <span>Accept <a href="">Privacy policy</a></span>
+          <label class="form-agreement">
+            <input
+              class="form-checkbox visually-hidden"
+              name="agreement-checkbox"
+              type="checkbox"
+              checked
+            />
+            <span class="form-agreement-text">
+              Accept
+              <a class="form-agreement-link link" href=""> Privacy policy </a>
+            </span>
           </label>
-          <button type="submit"></button>
+          <button class="form-btn modal-btn" type="submit"></button>
         </form>
       </div>
     </div>
