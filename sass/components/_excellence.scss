@@ -1,0 +1,67 @@
+/* Why are we */
+
+.excellence {
+  display: flex;
+}
+
+.excellence-wrapper {
+  display: flex;
+  margin-right: 130px;
+}
+
+.excellence-list:nth-child(even) {
+  margin-top: 54px;
+}
+
+.excellence-list:not(:nth-child(even)) {
+  margin-right: 30px;
+}
+
+.excellenc-list-item {
+  max-width: 170px;
+  padding-top: 20px;
+  padding-right: 21px;
+  padding-bottom: 20px;
+  padding-left: 21px;
+
+  background-color: #f7f7f7;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.excellence-list-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--title-light-theme-color);
+}
+
+.excellence-list-item-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-light-theme-color);
+}
+
+.excellence .title {
+  max-width: 430px;
+  margin-bottom: 20px;
+  color: var(--title-light-theme-color);
+}
+
+.excellence .description-light {
+  max-width: 500px;
+}
+
+.symbol-plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--accent-color);
+}

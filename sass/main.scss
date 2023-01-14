@@ -2,6 +2,7 @@
 
 @import './utils/variables';
 @import './utils/animations';
+@import './utils/placeholder';
 @import './utils/mixins';
 
 // base styles
@@ -20,5 +21,14 @@
 @import './components/navigation';
 @import './components/hero';
 @import './components/social';
+@import './components/slider';
 @import './components/about';
 @import './components/services';
+@import './components/excellence';
+@import './components/team';
+@import './components/icons';
+@import './components/gallery';
+@import './components/booking';
+@import './components/contacts';
+@import './components/footer';
+@import './components/modal';

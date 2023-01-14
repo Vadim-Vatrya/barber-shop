@@ -1,0 +1,39 @@
+.masters {
+  @extend %section;
+
+  background-color: #f7f7f7;
+}
+
+.masters-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.masters-list-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.team-wrapper {
+  padding: 30px 10px 0;
+}
+
+.masters-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--title-light-theme-color);
+}
+
+.masters-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
