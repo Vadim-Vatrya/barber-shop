@@ -1,6 +1,8 @@
 // utils styles
 
 @import './utils/variables';
+@import './utils/animations';
+@import './utils/mixins';
 
 // base styles
 
@@ -8,7 +10,15 @@
 @import './base/reset';
 
 // components styles
+
+@import './components/section';
+@import './components/container';
+@import './components/typography';
+@import './components/button';
 @import './components/logo';
 @import './components/header';
 @import './components/navigation';
-@import './components/button';
+@import './components/hero';
+@import './components/social';
+@import './components/about';
+@import './components/services';
