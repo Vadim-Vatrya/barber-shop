@@ -1,0 +1,8 @@
+.logo__img {
+  fill: var(--title-light-theme-color);
+  transition: fill var(--trns-fast);
+
+  .header.header--transparent & {
+    fill: var(--title-dark-theme-color);
+  }
+}
