@@ -1,8 +1,12 @@
 .logo__img {
-  fill: var(--title-light-theme-color);
+  fill: var(--title-dark-theme-color);
   transition: fill var(--trns-fast);
 
-  .header.header--transparent & {
+  @media screen and (min-width: $tablet) {
+    fill: var(--title-light-theme-color);
+  }
+
+  .header--transparent & {
     fill: var(--title-dark-theme-color);
   }
 }
