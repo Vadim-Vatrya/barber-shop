@@ -7,7 +7,6 @@
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
-  letter-spacing: 0.1em;
   text-transform: uppercase;
 
   &-dark {
@@ -51,23 +50,24 @@
   }
 }
 
-.title-light {
+.title {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 40px;
+  line-height: calc(47 / 40);
   letter-spacing: 0.05em;
 
   margin-bottom: 20px;
+
   color: var(--title-light-theme-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
 }
 
 .title-dark {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: var(--title-dark-theme-color);
   margin-bottom: 44px;
+
+  color: var(--title-dark-theme-color);
 }
