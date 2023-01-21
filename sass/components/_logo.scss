@@ -3,7 +3,7 @@
   transition: fill var(--trns-fast);
 
   @media screen and (min-width: $tablet) {
-    fill: var(--title-light-theme-color);
+    fill: var(--title--theme-color);
   }
 
   .header--transparent & {
