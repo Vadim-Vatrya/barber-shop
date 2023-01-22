@@ -30,7 +30,11 @@
 }
 
 .header__logo {
-  margin-right: 132px;
+  margin-right: 60px;
+
+  @include mq(desktop) {
+    margin-right: 132px;
+  }
 }
 
 .header__navigation {
@@ -40,7 +44,13 @@
 .header__group {
   display: none;
 
-  @media screen and (min-width: $tablet) {
+  // @media screen and (min-width: $tablet) {
+  //   display: flex;
+  //   align-items: center;
+  //   padding-right: 20px;
+  // }
+
+  @include mq(tablet) {
     display: flex;
     align-items: center;
     padding-right: 20px;
@@ -62,6 +72,16 @@
   transition-property: color;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
+
+  @include mq(desktop, max) {
+    display: none;
+  }
+
+  // @include mq(tablet) {
+  //   display: flex;
+  //   align-items: center;
+  //   padding-right: 20px;
+  // }
 
   &:hover,
   &:focus {

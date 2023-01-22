@@ -1,5 +1,5 @@
 .navigation {
-  @media screen and (max-width: $tablet) {
+  @include mq(tablet, max) {
     display: none;
   }
 }
@@ -11,7 +11,11 @@
 
 .navigation__item {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 16px;
+
+    @include mq(desktop) {
+      margin-right: 30px;
+    }
   }
 }
 
