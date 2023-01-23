@@ -1,3 +1,7 @@
+.hero {
+  @extend %section;
+}
+
 .hero-container {
   display: flex;
   position: relative;
@@ -39,6 +43,9 @@
   margin: 0;
 
   animation: slide-to-top 400ms ease-out 1700ms both;
+  @include mq(tablet, max) {
+    font-size: 14px;
+  }
 }
 
 .hero-social-links {

@@ -133,18 +133,18 @@
             transform: translateY(0);
   }
 }
-.gallery, .masters, .services {
+.gallery, .masters, .services, .hero {
   padding-top: 84px;
   padding-bottom: 84px;
 }
 @media screen and (min-width: 768px) {
-  .gallery, .masters, .services {
+  .gallery, .masters, .services, .hero {
     padding-top: 100x;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .gallery, .masters, .services {
+  .gallery, .masters, .services, .hero {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -579,6 +579,11 @@ img {
   -webkit-animation: slide-to-top 400ms ease-out 1700ms both;
           animation: slide-to-top 400ms ease-out 1700ms both;
 }
+@media screen and (max-width: 767.98px) {
+  .description {
+    font-size: 14px;
+  }
+}
 
 .hero-social-links {
   margin-bottom: 40px;
@@ -694,6 +699,19 @@ img {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 767.98px) {
+  .about-us-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .about-us-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .about-us-list-item {
   overflow: hidden;
@@ -717,8 +735,6 @@ img {
 .about-us .text {
   margin-bottom: 42px;
   width: 470px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -840,38 +856,108 @@ img {
   margin: 0 auto;
 }
 
-/* Why are we */
 .excellence {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .excellence-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .excellence-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.exellence-right {
+  max-width: 500px;
+}
+@media screen and (max-width: 1199.98px) {
+  .exellence-right {
+    margin-bottom: 44px;
+  }
+}
+.exellence-right .subtitle {
+  margin-bottom: 0;
+}
+
 .excellence-wrapper {
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .excellence-wrapper {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .excellence-wrapper {
+    max-width: 370px;
+    margin-right: 120px;
+  }
+}
+
+.excellence-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 130px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media screen and (max-width: 479.98px) {
+  .excellence-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
 }
 
-.excellence-list:nth-child(even) {
-  margin-top: 54px;
-}
-
-.excellence-list:not(:nth-child(even)) {
-  margin-right: 30px;
-}
-
-.excellenc-list-item {
-  max-width: 170px;
-  padding-top: 20px;
-  padding-right: 21px;
-  padding-bottom: 20px;
-  padding-left: 21px;
+.excellence-list-item {
+  width: 193px;
+  min-height: 133px;
+  padding: 20px 32px;
   background-color: #f7f7f7;
+  text-align: center;
 }
-.excellenc-list-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .excellence-list-item {
+    width: 210px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .excellence-list-item {
+    width: 170px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .excellence-list-item:nth-child(2n) {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .excellence-list-item-count {
@@ -881,6 +967,7 @@ img {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--title-light-theme-color);
+  position: relative;
 }
 
 .excellence-list-item-desc {
@@ -891,22 +978,15 @@ img {
   color: var(--title-light-theme-color);
 }
 
-.excellence .title {
-  max-width: 430px;
-  margin-bottom: 20px;
-  color: var(--title-light-theme-color);
-}
-
-.excellence .description-light {
-  max-width: 500px;
-}
-
 .symbol-plus {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
   text-align: center;
   color: var(--accent-color);
+  position: absolute;
+  top: 6px;
+  right: 6px;
 }
 
 .masters {
