@@ -8,12 +8,19 @@
 }
 
 .gallery-list {
-  display: flex;
-  gap: 30px;
+  @include card-set;
+
+  @include mq(tablet) {
+    @include card-set(2);
+  }
+
+  @include mq(desktop) {
+    @include card-set(4);
+  }
 }
 
 .gallery-list-item {
-  flex-basis: calc((100% - 30px * 3) / 4);
+  // flex-basis: calc((100% - 30px * 3) / 4);
 
   /* animation */
 

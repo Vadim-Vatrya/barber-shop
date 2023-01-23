@@ -5,13 +5,14 @@
 }
 
 .masters-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+  @include card-set;
 
-.masters-list-item {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  @include mq(desktop) {
+    @include card-set(3);
+  }
+  //   display: flex;
+  //   gap: 30px;
+  //   flex-wrap: wrap;
 }
 
 .team-wrapper {
