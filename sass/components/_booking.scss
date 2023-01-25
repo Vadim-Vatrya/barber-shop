@@ -1,8 +1,19 @@
+.booking,
+.contacts {
+  @extend %section;
+}
+
+.contacts-group-container {
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+
 .contatcs-group {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #191c26;
-  background-image: url(../image/contacts/Bg.png);
+  background-image: url(../../image/contacts/Bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left calc(50% + 423px) center;

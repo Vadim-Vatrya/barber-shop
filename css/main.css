@@ -133,18 +133,21 @@
             transform: translateY(0);
   }
 }
-.gallery, .masters, .services, .hero {
+.booking,
+.contacts, .gallery, .masters, .services, .hero {
   padding-top: 84px;
   padding-bottom: 84px;
 }
 @media screen and (min-width: 768px) {
-  .gallery, .masters, .services, .hero {
+  .booking,
+.contacts, .gallery, .masters, .services, .hero {
     padding-top: 100x;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .gallery, .masters, .services, .hero {
+  .booking,
+.contacts, .gallery, .masters, .services, .hero {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -1160,11 +1163,19 @@ img {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-group-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .contatcs-group {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #191c26;
-  background-image: url(../image/contacts/Bg.png);
+  background-image: url(../../image/contacts/Bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left calc(50% + 423px) center;
