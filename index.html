@@ -100,22 +100,52 @@
           <div class="about-us-img">
             <ul class="about-us-list list">
               <li class="about-us-list-item">
-                <img
-                  class="about-img"
-                  src="./image/about-us/shaving.jpg"
-                  alt="Master shaves a man"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./image/about-us/img-1_lg@1x.jpg 1x,
+                      ./image/about-us/img-1_lg@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./image/about-us/img-1_md@1x.jpg 1x,
+                      ./image/about-us/img-1_md@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="about-img"
+                    src="./image/about-us-us/img-1_md-@1x.jpg"
+                    alt="Beard shaving"
+                    loading="lazy"
+                  />
+                </picture>
               </li>
               <li class="about-us-list-item">
-                <img
-                  class="about-img"
-                  src="./image/about-us/haircut.jpg"
-                  alt="Master cuts a man"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./image-us/about/img-2_lg@1x.jpg 1x,
+                      ./image/about-us/img-2_lg@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./image/about-us/img-2_md@1x.jpg 1x,
+                      ./image/about-us/img-2_md@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="about-img"
+                    src="./image/about-us/img-2_md-@1x.jpg"
+                    alt="Haircut"
+                    loading="lazy"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
