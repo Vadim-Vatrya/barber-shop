@@ -5,10 +5,42 @@
   margin: 0 auto;
 
   background-color: var(--backgr-dark-color);
-  background-image: url(../image/services/img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  // mobile screen
+  background-image: url(../../image/services/img_sm@1x.png);
+
+  // mobile screen retina
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../image/services/img_sm@2x.png);
+  }
+
+  // tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: url(../../image/services/img_md@1x.png);
+
+    // tablet screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../image/services/img_md@2x.png);
+    }
+  }
+
+  // desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: url(../../image/services/img_lg@1x.png);
+
+    // desktop screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../image/services/img_lg@2x.png);
+    }
+  }
 }
 
 .price-block {
@@ -72,7 +104,7 @@
 
 .services-list-item-name,
 .services-list-item-price {
-  @media screen and (max-width: 767px) {
+  @include mq(tablet, max) {
     font-size: 14px;
     line-height: calc(20 / 14);
     letter-spacing: 0.02em;
